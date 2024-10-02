@@ -16,8 +16,8 @@ body {
     background-color: rgb(29, 150, 237);
     display: grid;
     grid-template-rows: 2fr 6fr 3fr 6fr;
-    gap: 5px;
-    padding: 10px;
+    gap: 10px;
+    padding: 5px;
     
 }
 
@@ -26,12 +26,16 @@ body {
     font-size: 20px;
     font-weight: 500;
     margin-left: 30px;
+    margin-bottom: 2px;
+
+
 
 }
 
 .top {
     display: flex;
     align-items: center;
+    margin: 1px;
 }
 
 .top p {
@@ -42,11 +46,36 @@ body {
 
 .top img {
     width: 24px;
-    color: #eee;
+    
     
 }
 
-/* secone */
+.svg-icon {
+    width: 35px;
+    color: #eee;
+}
+
+svg {
+    width: 24px;
+}
+
+.middle div {
+    display: flex;
+    align-content: center;
+    gap: 10px;
+    color: #eee;
+
+}
+
+.bottom div {
+    display: flex;
+    align-content: center;
+    gap: 10px;
+    color: #eee;
+
+}
+
+/* second */
 .two {
     grid-column: 2/3;
     background-color: blanchedalmond;
@@ -59,6 +88,52 @@ body {
     grid-row: 1/2;
     background-color: lightgoldenrodyellow;
 }
+
+/* heading-top */
+
+.heading-top {
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.searchbar {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+
+#search {
+    width: 500px;
+    height: 30px;
+    justify-items: left;
+    border: 2px solid lightslategrey;
+    border-radius: 20px;
+    margin-left: 5px;
+}
+label svg {
+    margin-left: 10px;
+    width: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .content {
     grid-row: 2/3;
