@@ -78,22 +78,24 @@ svg {
 /* second */
 .two {
     grid-column: 2/3;
-    background-color: blanchedalmond;
 
     display: grid;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 7fr;
 }
 
 .heading {
-    grid-row: 1/2;
-    background-color: lightgoldenrodyellow;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+    padding: 0;
 }
 
 /* heading-top */
 
-.heading-top {
+.heading-top, .heading-top-one {
     display: grid;
-    grid-template-columns: 1fr 7fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center;
 }
@@ -118,6 +120,38 @@ label svg {
 }
 
 
+/* heading bottom */
+
+.heading-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.heading-bottom div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#face {
+    width: 60px;
+    color: burlywood;
+}
+
+.heading-bottom-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    
+}
+
+.heading-bottom-list button {
+    padding: 4px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: cadetblue;
+}
 
 
 
@@ -127,8 +161,7 @@ label svg {
 
 
 
-
-
+/* content box */
 
 
 
@@ -137,41 +170,64 @@ label svg {
 
 .content {
     grid-row: 2/3;
-    background-color: lightcoral;
+    background-color: lightgrey;
 
     display: grid;
     grid-template-columns: 3fr 1fr;
+    height: 85vh;
+    padding: 10px;
+    
 }
 
 .projects {
     grid-column: 1/2;
-    background-color: lightgrey;
-    padding: 10px;
+
     display: grid;
-    gap: 10px;
+
     grid-template-columns: 1fr 1fr;
+    justify-items: left;
+    
 }
 
 .sub {
     background-color: lemonchiffon;
+    height: 200px;
+    width: 400px;
+    border-radius: 10px;
 }
+
+
+
+
+/* info-bar */
 
 .info-bar {
-    grid-column: 2/3;
-    background-color: lightseagreen;
-
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    gap: 10px;
+    grid-template-rows: 1fr 4fr 1fr 4fr;
+    height: 1000px;
+    align-items: center;
 }
 
+
+
 .announcment {
-    grid-row: 1/2;
     background-color: aliceblue;
+    height: 300px;
+    padding: 4px;
+    font-weight: 600;
+    margin:5px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+}
+
+.announcment div {
+    border-bottom: 1px solid black;
 }
 
 .trending {
-    grid-row: 2/3;
-    background-color: antiquewhite;
+    background-color: aliceblue;
+    text-align: center;
+    border-radius: 20px;
 }
 
